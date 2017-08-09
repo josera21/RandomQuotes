@@ -3,9 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Random Quote</title>
-	<link rel="stylesheet" href="styles/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<!-- Boostrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/index.css">
+	<!-- Scripts -->
+	<script src="https://use.fontawesome.com/c648a6e832.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -13,13 +16,27 @@
 	<script src="scripts/scripts.js"></script>
 </head>
 <body>
-	<h1 class="text-primary text-center">Generate of Random Quotes</h1>
+	<h1 class="text-center font-pacifico min-top-space">Generate of Random Quotes</h1>
 	<div class="text-center top-space">
-		<button id="quoteAJAX" class="btn btn-primary btn-lg">Get Quote</button>
-		<div id="response" class="min-top-space">
-			<p id="quoteText" class="primary-text"></p>
+		<button id="quoteAJAX" class="btn btn-outline-primary btn-lg">Generate quote</button>
+		
+		<div id="response" class="container">
+			<div class="col-md-8 offset-md-2">
+				<div id="quoteCard" class="card card-inverse card-primary mb-3 text-center min-top-space">
+	  				<div class="card-block">
+						<blockquote class="blockquote blockquote-reverse text-center">
+						  <p class="white-text" id="quoteText"></p>
+						  <footer id="quoteAuthor" class="blockquote-footer text-left white-text"></footer>
+						</blockquote>
+					</div>
+					<button class="btn btn-default">
+						<a id="tweet" href="" class="text-primary" target="_blank"><i class="fa fa-2x fa-fw fa-twitter" aria-hidden="true "></i></a>
+					</button>
+				</div>
+			</div>
 		</div>
-		<div id="log"></div>
 	</div>
+
+	<footer class="text-center top-space"><p>By jose'ra</p></footer>
 </body>
 </html>

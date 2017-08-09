@@ -1,3 +1,15 @@
+body {
+	background-color: #E0E0E0 !important;
+}
+
+#quoteAuthor {
+	margin-left: 2em;
+}
+
+.font-pacifico {
+	font-family: 'Pacifico', cursive;
+}
+
 .min-top-space {
 	margin-top: 1.5em;
 }
@@ -6,6 +18,10 @@
 	margin-top: 5em;
 }
 
-body {
-	background-color: #78909c;
+.white-text {
+	color: white !important;
+}
+
+button a {
+	text-decoration: none !important;
 }
